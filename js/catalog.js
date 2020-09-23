@@ -66,15 +66,15 @@ function updateCartPreview() {
   // TODO: Get the item and quantity from the form
    // TODO: Add a new element to the cartContents div with that information
   var cartPreview = document.getElementById('cartContents');
-  var ItemsPrevieList = document.createElement('ul');
-  cartPreview.appendChild(ItemsPrevieList);
+  var itemsPrevieList = document.createElement('ul');
+  cartPreview.appendChild(itemsPrevieList);
 
   var selectedValue = document.getElementById('items').value;
   var itemquantity = document.getElementById('quantity').value;
 
-  var IPreivIndivPre = document.createElement('li');
-  IPreivIndivPre.textContent= 'The Items Name is :' + selectedValue +' The Quantity : ' + itemquantity;
-  ItemsPrevieList.appendChild(IPreivIndivPre);
+  var iPreivIndivPre = document.createElement('li');
+  iPreivIndivPre.textContent= 'The Items Name is :' + selectedValue +' The Quantity : ' + itemquantity;
+  itemsPrevieList.appendChild(iPreivIndivPre);
   
  
 }
